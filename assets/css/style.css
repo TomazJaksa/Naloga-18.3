@@ -1,0 +1,218 @@
+* {
+	/*Box-model*/
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+
+	/*Tekst*/
+	font-family: 'Arima Madurai', cursive; /*Pisava za paragrafe*/
+}
+
+body {
+	/*Positioning*/
+	position:relative;
+		
+	/*Box-model*/
+	width:100;
+
+	/*Tekst*/
+	font-family: 'Cinzel', serif; /*Pisava za naslove*/
+	font-family: 'Arima Madurai', cursive; /*Pisava za paragrafe*/
+}
+
+header {
+	/*Box-model*/
+	width: 100%;
+	height: 10em;
+	padding: 4em;
+		
+	/*Tekst*/
+	text-shadow: 2px 5px 8px black;
+	text-align:center;
+		
+	/*Ostalo*/
+	background-image: url("../images/laboratory.jpg");
+	background-size: cover;
+}
+
+header h1 {color: white;}
+
+h1 {	
+	/*Color*/
+	color: #003d3e;
+		
+	/*Tekst*/
+	font-family: 'Cinzel', serif;
+}
+
+h2 {margin-top: 1em;}
+
+nav {
+	/*Color*/
+	background-color: #003d3e;
+	color: white;
+}
+
+li {display: inline-block;}
+
+a {
+	/*Positioning*/
+	display:inline-block;
+		
+	/*Box-model*/
+	padding: 1em;
+		
+	/*Color*/
+	color: white;
+		
+	/*Tekst*/
+	text-decoration: none;
+		
+	/*Ostalo*/
+	transition: background-color 1s;
+}
+
+#backlink {	
+	/*Color*/
+	color: black;
+		
+	/*Tekst*/
+	font-weight: bold;
+}
+
+#backlink:hover {
+	/*Box-model*/
+	border-radius: 5px;
+		
+	/*Color*/
+		color: white;
+}
+a:hover {background-color: #009092;}
+
+.dropdown-content {
+	/*Positioning*/
+	display: none;
+    position: absolute;
+		
+	/*Box-model*/
+	min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		
+	/*Color*/
+	background-color: #f9f9f9;
+
+	/*Ostalo*/
+    z-index: 1;
+}
+
+.dropdown-content a {
+	/*Positioning*/
+	display: block;
+		
+	/*Box-model*/
+	padding: 12px 16px;
+		
+	/*Color*/
+	color: black;
+		
+	/*Tekst*/
+	text-decoration: none;
+	text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #009092;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.resultsImage {
+	/*Box-model*/
+	height: 100px;
+	width: 100px;
+}
+
+table {	
+	/*Box-model*/
+	display: block;
+	width: 40%;
+	margin:2em auto;
+	box-shadow: 0px 5px 10px #003d3e;
+	padding: 2em;
+		
+	/*Color*/
+	background-color: beige;
+}
+td:first-child {	
+	/*Box-model*/
+	padding-left:2em;
+	padding-right: 2em;
+}
+main {
+	/*Positioning*/
+	display:block;
+
+	/*Tekst*/
+	text-align: center;	
+}
+
+#dnaImg,#microscope {	
+	/*Box-model*/
+	margin-top: 2em;
+	width: 200px;
+	height: 200px;
+}
+textarea {	
+	/*Box-model*/
+	margin-top: 1em;
+	outline:none;
+	resize:none;
+	border-radius:5px;
+	padding: 1em;
+	border:none;
+	box-shadow: 1px 5px 8px silver;
+		
+	/*Color*/
+	background-color: beige;
+}
+
+input[type="submit"] {
+	/*Box-model*/
+	margin-top: 1em;
+	border: none;
+	padding: 1em;
+	border-radius: 5px;
+		
+	/*Color*/
+	background-color: #003d3e;
+	color: white;
+
+	/*Ostalo*/
+	transition: background-color 1s;
+}
+
+input[type="submit"]:hover {background-color: #009092;}
+
+input[type="submit"]:active {
+	/*Positioning*/
+	position: relative;
+	top: 1em;
+}
+
+footer {	
+	/*Box-model*/
+	margin-top: 2em;
+	border-top:solid #003d3e 2px;
+	width: 100%;
+	height: 3em;
+	padding: 0.7em;
+		
+	/*Color*/
+	color: white;
+		
+	/*Tekst*/
+	text-align:center;
+	text-shadow: 2px 5px 8px black;
+		
+	/*Ostalo*/
+	background-image: url("../images/laboratory3.jpg");
+	background-size: cover;	
+}

@@ -1,0 +1,65 @@
+{%extends "base.html"%}
+
+{%block title%}Results of the Analysis{%endblock title%}
+
+{%block content%}
+<img id="microscope" src="../assets/images/microscope.png">
+<h2>Rezultati analize:</h2>
+<table>
+	<tr>
+		<td><img class="resultsImage"src="../assets/images/hair2.png"></td>
+		<td><h1>Barva las</h1> {%if hair == "black" %} 
+									<h3>Črna</h3>
+								{%elif hair == "brown" %}
+									<h3>Rjava</h3>
+								{%else%}
+									<h3>Blond</h3>
+								{%endif%}
+		</td>
+	</tr>
+	<tr>
+		<td><img class="resultsImage"src="../assets/images/face.png"></td>
+		<td><h1>Oblika obraza</h1>{% if face == "Square"%}
+									<h3>Oglat</h3>
+								  {%elif face == "Round"%}
+								   	<h3>Okrogel</h3>
+								  {%else%}
+								   	<h3>Ovalen</h3>
+								  {%endif%}
+		</td>
+	</tr>
+	<tr>
+		<td><img class="resultsImage"src="../assets/images/eyes.png"></td>
+		<td><h1>Barva oči</h1>{%if eyes=="Blue"%}
+							  	<h3>Modra</h3>
+							  {%elif eyes=="Green"%}
+							  	<h3>Zelena</h3>
+							  {%else%}
+							  	<h3>Rjava</h3>
+							  {%endif%}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img class="resultsImage"src="../assets/images/gender.png">
+		</td>
+		<td><h1>Spol</h1>{%if gender=="Female"%}
+							<h3>Ženski</h3>
+						 {%else%}
+							<h3>Moški</h3>
+						 {%endif%}</td>
+	</tr>
+	<tr>
+		<td><img class="resultsImage"src="../assets/images/race.jpg"></td>
+		<td><h1>Rasa</h1>{%if race=="White"%}
+							  	<h3>Bela</h3>
+						 {%elif race=="Black"%}
+							  	<h3>Črna</h3>
+						 {%else%}
+							  	<h3>Azijska</h3>
+						 {%endif%}</td>
+	</tr>
+	
+</table>
+	<a id="backlink" href="/">Nazaj na sistem za analizo.</a>
+{%endblock content%}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{%block title%}{%endblock title%}</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Cinzel" rel="stylesheet">
+
+    <!--Tab icon-->
+    <link rel="shortcut icon" href="../assets/images/dna4.png" type="image/png">
+</head>
+<body>
+	<header>
+		<h1>Slovenski nacionalni preiskovalni urad</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#">O nas</a></li>
+			<li><a href="#">Zgodovina</a></li>
+			<li><a href="#">Oddelki</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropbtn">Zaposleni</a>
+				<div class="dropdown-content">
+					<a href="#">Profil zaposlenih</a>
+					<a href="#">Vodstvo</a>
+				</div>
+			</li>
+			<li><a href="#">Kontakt</a></li>
+		</ul>
+	</nav>
+	<main>
+    {%block content%}{%endblock content%}
+	</main>
+
+	<footer>Preiskovalni urad Republike Slovenije
+Gregorčičeva 20-25
+1000 Ljubljana
+T: 01 / 478 1000
+E: info.ukom@gov.si</footer>
+</body>
+</html>
